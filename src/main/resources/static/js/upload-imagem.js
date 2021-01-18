@@ -6,7 +6,14 @@ $(document).on('change', '#input-carregar-imagem', function (e) {
 	lerInput(this);
 });
 
-
+$(document).on('click', '#anexar-imagem', function (e) {
+	$('#div-salvar-imagem').removeClass('invisible');
+	
+	let src = $('#vizualizar-imagem-modal').attr('src');
+	$('#vizualizar-imagem-anexada').attr('src', src);
+	
+	$('#codigoBase64').val(src);
+})
 
 function lerInput(input) {
 	if (input.files && input.files[0]) { 
@@ -14,6 +21,7 @@ function lerInput(input) {
 		
 		reader.onload = function(e) {
 			$('#vizualizar-imagem-modal').attr('src', e.target.result);
+			$('#anexar-imagem').prop('disabled', false);
 			$('#vizualizar-imagem-modal').show();
 		}
 		
