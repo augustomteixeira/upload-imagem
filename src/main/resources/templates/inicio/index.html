@@ -32,22 +32,22 @@
         </div>
 	</div>
 	
-	<div id="modal-de-imagens" class="modal fade" role="dialog" tabindex="-1" data-backdrop="static">
+	<div id="modal-upload-imagem" class="modal fade" role="dialog" tabindex="-1" data-backdrop="static">
     	<div class="modal-dialog modal-lg">
 
         	<div class="modal-content">
 	            <div class="modal-header">
-	                <h4 id="titulo-modal" class="modal-title"></h4>
+	                <h4 id="titulo-modal" class="modal-title">Anexar Imagem</h4>
 	            </div>
 
                 <div class="modal-body">
                     <div id="div-imagens">
-
+		
                     </div>
                 </div>
 
                 <div class="modal-footer">
-                    <button id="fechar-modal-de-imagens" name="fechar-modal-de-imagens" type="button"
+                    <button id="fechar-modal-upload-imagem" name="fechar-modal-upload-imagem" type="button"
                         class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
                 </div>
         	</div>
@@ -63,6 +63,8 @@
 	    <script th:src="@{https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js}"
 	        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 	        crossorigin="anonymous"></script>
+	        
+	    <script th:src="@{/js/upload-imagem.js}"></script>
     </th:block>
 </body>
 </html>
