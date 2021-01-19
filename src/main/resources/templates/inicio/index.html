@@ -33,18 +33,22 @@
         
         <div id="div-salvar-imagem" class="col-lg-6 invisible">
             <div class="card">
-                <div class="card-header">
-                    <strong>Salvar imagem</strong>
-                </div>
-                <div class="card-body">
-                    <img id="vizualizar-imagem-anexada" class="img-responsive img-thumbnail preview-img" width="480">
-                    <input id="codigoBase64" name="codigoBase64" type="hidden">
-                </div>
-                <div class="card-footer">
-                     <a id="button-salvar-imagem" href="#" class="btn btn-outline-primary"
-                        title="Salvar imagem no banco de dados">
-                        <i class="fa fa-save"></i></a>	
-                </div>
+            	<form>
+	                <div class="card-header">
+	                    <strong>Salvar imagem</strong>
+	                </div>
+	               
+	                <div class="card-body">
+	                    <img id="vizualizar-imagem-anexada" class="img-responsive img-thumbnail preview-img" width="480">
+	                    <input id="codigoBase64" name="codigoBase64" type="hidden">
+	                </div>
+	                
+	                <div class="card-footer">
+	                     <a id="button-salvar-imagem" href="#" class="btn btn-outline-primary"
+	                        title="Salvar imagem no banco de dados">
+	                        <i class="fa fa-save"></i></a>	
+	                </div>
+                </form>
             </div>
         </div>
 	</div>
@@ -64,7 +68,7 @@
                         		   <a class="btn btn-primary" style="color: white;"><i class="fa fa-file-image-o"></i> Carregar Imagem</a>
 							</label> 
 							
-							<input id="input-carregar-imagem" class="file-chooser" type="file" accept="image/*" style="display: none">
+							<input id="input-carregar-imagem" class="file-chooser" type="file" accept="image/jpeg, image/png" style="display: none">
 													
 							<img id="vizualizar-imagem-modal" class="img-responsive img-thumbnail preview-img" width="240" style="display: none">
 						
