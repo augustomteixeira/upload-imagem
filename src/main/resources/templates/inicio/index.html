@@ -33,7 +33,7 @@
         
         <div id="div-salvar-imagem" class="col-lg-6 invisible">
             <div class="card">
-            	<form>
+            	<form th:object="${imagemDto}" th:action="@{/imagem/salvar}" method="post">
 	                <div class="card-header">
 	                    <strong>Salvar imagem</strong>
 	                </div>
@@ -44,9 +44,8 @@
 	                </div>
 	                
 	                <div class="card-footer">
-	                     <a id="button-salvar-imagem" href="#" class="btn btn-outline-primary"
-	                        title="Salvar imagem no banco de dados">
-	                        <i class="fa fa-save"></i></a>	
+	                     <button id="button-salvar-imagem" type="submit" class="btn btn-primary"
+	                        ><i class="fa fa-save"></i> Salvar</button>	
 	                </div>
                 </form>
             </div>

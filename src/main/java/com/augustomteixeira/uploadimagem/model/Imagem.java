@@ -12,7 +12,7 @@ public class Imagem {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idImagem;
 	
-	private String codigoBase64;
+	private byte[] codigoBase64;
 
 	public Integer getIdImagem() {
 		return idImagem;
@@ -22,14 +22,12 @@ public class Imagem {
 		this.idImagem = idImagem;
 	}
 
-	public String getCodigoBase64() {
+	public byte[] getCodigoBase64() {
 		return codigoBase64;
 	}
 
-	public void setCodigoBase64(String codigoBase64) {
+	public void setCodigoBase64(byte[] codigoBase64) {
 		this.codigoBase64 = codigoBase64;
 	}
-	
-	
-	
+		
 }
